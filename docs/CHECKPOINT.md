@@ -39,3 +39,10 @@ Last saved: 2026-10-17
 - No custom security headers (only meta tags). No server code: logins/data need Supabase with
   strict row-level security. Upgrade path: Vercel/Cloudflare + real domain.
 - 5 "high" npm audit warnings are dev-tools only (production deps: 0).
+
+## Donation flow answers (2026-10-19)
+- After submit: user gets email and replies manually (no auto-approve).
+- Shipping: donor ships themselves (mom may revisit).
+- Form fields: name, email, book titles/subject/condition, number of books. NOT city/state (add later if map is built).
+- Minimum condition: good (no missing pages, light writing OK).
+- How-it-works page expanded with steps, why STEM, FAQ (live). FAQ/steps text must match these answers.
