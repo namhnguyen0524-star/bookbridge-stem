@@ -1,6 +1,6 @@
 # CHECKPOINT - resume here
 
-Last saved: 2026-10-17
+Last saved: 2026-10-19
 
 ## Done
 - Tools installed: Git, GitHub CLI, Node 24, Python 3.12 (new terminals may need a restart to see them).
@@ -66,3 +66,17 @@ Last saved: 2026-10-17
 - Shipping/receiving partner in Vietnam: NOT decided, keep in mind.
 - Public leaderboard: user is for it, but wants a nickname moderation system (docs/MODERATION.md + scripts/check-leaderboard.mjs in CI). Still hidden until mom approves.
 - User is in charge of the project; mom handles the adult-side tasks for them (she is the adult contact).
+
+## STATUS SNAPSHOT (2026-10-19) - read this first
+LIVE (public repo, GitHub Pages): https://namhnguyen0524-star.github.io/bookbridge-stem/
+Pages: home, how-it-works (steps + FAQ), donate (Formspree form, ID in web/src/lib/config.ts), about (DRAFT, user to edit),
+privacy, blog (web/src/data/posts.ts, 1 welcome post), leaderboard + certificates (BUILT BUT HIDDEN, SHOW_LEADERBOARD=false).
+Moderation: docs/MODERATION.md + web/scripts/check-leaderboard.mjs (runs in CI).
+Push tip: git -c "credential.helper=!'C:/Program Files/GitHub CLI/gh.exe' auth git-credential" push
+
+WAITING ON USER / MOM: shipping address + Vietnam receiving partner (undecided), OK to publish leaderboard (user wants it),
+mom = adult contact. When approved: set SHOW_LEADERBOARD=true, update FAQ/How-it-works shipping text, push.
+
+POSSIBLE NEXT: Dependabot PRs cleanup (ask before merging risky ones), edit About story in user's voice, Vietnamese language,
+map (needs city/state on form), photo area (permission needed), real domain later.
+Reminder: user is a 9th grader; end replies with "In simple words", explain terms, ask before risky/outside-project actions.
