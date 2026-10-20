@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "Turn your unused books into a student's dream in Vietnam. Donate Science, Technology, Engineering, Art and Math books.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="en"
