@@ -24,5 +24,6 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run typecheck
+      - run: npm run check:leaderboard
       - run: npm run build
       - run: npm audit --omit=dev --audit-level=high # only code that ships to visitors

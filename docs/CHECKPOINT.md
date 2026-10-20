@@ -61,3 +61,8 @@ Last saved: 2026-10-17
 ## Leaderboard is HIDDEN (2026-10-19)
 - Built but off: SHOW_LEADERBOARD = false in web/src/lib/config.ts (nav link, form nickname/consent, FAQ and privacy mentions all hidden; /leaderboard/ says "Coming soon").
 - To launch after mom approves: set it to true, push. Then re-read privacy text and test the form.
+
+## Answers from user (2026-10-19)
+- Shipping/receiving partner in Vietnam: NOT decided, keep in mind.
+- Public leaderboard: user is for it, but wants a nickname moderation system (docs/MODERATION.md + scripts/check-leaderboard.mjs in CI). Still hidden until mom approves.
+- User is in charge of the project; mom handles the adult-side tasks for them (she is the adult contact).

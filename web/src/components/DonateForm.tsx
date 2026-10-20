@@ -68,6 +68,7 @@ export default function DonateForm() {
         <>
       <label className="block">Nickname for the leaderboard (optional)
         <input name="nickname" maxLength={30} className={input} placeholder="Leave empty to stay private" />
+        <span className="text-sm opacity-70">Kind and appropriate only. No full real names, emails, phone numbers or links. We read every nickname before it is shown.</span>
       </label>
       <label className="flex items-start gap-2 text-sm">
         <input type="checkbox" name="show_on_leaderboard" value="yes" className="mt-1" />
