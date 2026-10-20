@@ -11,7 +11,7 @@ Last saved: 2026-10-17
 - Switched to GitHub Pages plan: static export, basePath `/bookbridge-stem`, deploy workflow.
 
 ## NEXT STEPS (in order)
-1. DONE (2026-10-19): gh `workflow` scope granted; code pushed to origin/main (repo still private).
+1. DONE (2026-10-19): gh `workflow` scope granted; code pushed to origin/main (repo now PUBLIC, Pages live).
    Tip: plain `git push` can't prompt for login here; use
    `git -c "credential.helper=!'C:/Program Files/GitHub CLI/gh.exe' auth git-credential" push`.
 3. GitHub Pages on a FREE account requires a PUBLIC repo. Decide: make repo public
