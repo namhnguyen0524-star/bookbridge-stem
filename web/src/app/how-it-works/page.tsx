@@ -1,4 +1,5 @@
 import { Header, Footer } from "@/components/Shell";
+import { SHOW_LEADERBOARD } from "@/lib/config";
 
 // Each step has a short title, a plain explanation, and a "why it matters" line.
 const steps = [
@@ -64,7 +65,7 @@ export default function HowItWorks() {
 
         <h2 className="mt-10 text-2xl font-bold text-brand-blue">Common questions</h2>
         <dl className="mt-4 space-y-4">
-          {faq.map(([q, a]) => (
+          {faq.filter(([q]) => SHOW_LEADERBOARD || !q.includes("leaderboard")).map(([q, a]) => (
             <div key={q} className="rounded-2xl bg-soft p-5">
               <dt className="font-semibold">{q}</dt>
               <dd className="mt-1 opacity-85">{a}</dd>

@@ -57,3 +57,7 @@ Last saved: 2026-10-17
 ## Built (About + Privacy)
 - /about (DRAFT story, owner should edit in own words) and /privacy (matches form fields; update if fields change). Linked in nav/footer.
 - USER TODO: talk to mom about shipping address, receiving partner in Vietnam, public nicknames on leaderboard.
+
+## Leaderboard is HIDDEN (2026-10-19)
+- Built but off: SHOW_LEADERBOARD = false in web/src/lib/config.ts (nav link, form nickname/consent, FAQ and privacy mentions all hidden; /leaderboard/ says "Coming soon").
+- To launch after mom approves: set it to true, push. Then re-read privacy text and test the form.

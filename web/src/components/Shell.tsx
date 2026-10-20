@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
+import { SHOW_LEADERBOARD } from "@/lib/config";
 
 // Header + footer shared by every page.
 export function Header() {
@@ -13,7 +14,9 @@ export function Header() {
         <nav className="flex gap-5 text-sm font-medium">
           <Link href="/how-it-works/" className="hover:text-brand-green">How it works</Link>
           <Link href="/about/" className="hover:text-brand-green">About</Link>
-          <Link href="/leaderboard/" className="hover:text-brand-green">Leaderboard</Link>
+          {SHOW_LEADERBOARD && (
+            <Link href="/leaderboard/" className="hover:text-brand-green">Leaderboard</Link>
+          )}
           <Link href="/donate/" className="hover:text-brand-green">Donate</Link>
         </nav>
       </div>

@@ -1,8 +1,21 @@
 import Link from "next/link";
 import { Header, Footer } from "@/components/Shell";
 import { rankedDonors } from "@/lib/leaderboard";
+import { SHOW_LEADERBOARD } from "@/lib/config";
 
 export default function Leaderboard() {
+  if (!SHOW_LEADERBOARD) {
+    return (
+      <>
+        <Header />
+        <main className="mx-auto w-full max-w-3xl flex-1 px-6 py-12">
+          <h1 className="text-3xl font-bold text-brand-blue">Leaderboard</h1>
+          <p className="mt-3 rounded-2xl bg-soft p-5">Coming soon.</p>
+        </main>
+        <Footer />
+      </>
+    );
+  }
   const donors = rankedDonors();
   return (
     <>

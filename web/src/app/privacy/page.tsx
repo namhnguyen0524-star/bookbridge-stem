@@ -1,4 +1,5 @@
 import { Header, Footer } from "@/components/Shell";
+import { SHOW_LEADERBOARD } from "@/lib/config";
 
 // Plain-language privacy page. Keep it in sync with what the donate form really collects.
 const sections: [string, string[]][] = [
@@ -19,7 +20,7 @@ const sections: [string, string[]][] = [
     "We keep your request while we handle your donation and for a short time afterward. You can ask us to delete it at any time.",
   ]],
   ["Your choices", [
-    "To see, fix, or delete your information, or to be taken off the leaderboard, reply to any email we send you and tell us.",
+    "To see, fix, or delete your information, reply to any email we send you and tell us.",
   ]],
   ["Young donors", [
     "If you are under 13, please ask a parent or guardian to fill in the form for you.",
@@ -36,7 +37,7 @@ export default function Privacy() {
           In short: we collect only what we need to handle your books, we never sell it, and you
           can ask us to delete it. This is a student project, so we keep things simple.
         </p>
-        {sections.map(([title, paras]) => (
+        {sections.filter(([title]) => SHOW_LEADERBOARD || title !== "The public leaderboard").map(([title, paras]) => (
           <section key={title} className="mt-8">
             <h2 className="text-xl font-bold text-brand-green">{title}</h2>
             {paras.map((p) => (

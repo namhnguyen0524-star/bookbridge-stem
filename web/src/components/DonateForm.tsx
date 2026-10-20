@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { FORMSPREE_FORM_ID } from "@/lib/config";
+import { FORMSPREE_FORM_ID, SHOW_LEADERBOARD } from "@/lib/config";
 
 // The form sends its answers to Formspree, which emails them to you.
 const input = "mt-1 w-full rounded-xl border border-soft bg-white p-3";
@@ -64,6 +64,8 @@ export default function DonateForm() {
       <label className="block">Number of books
         <input name="count" type="number" min={1} max={500} required className={input} />
       </label>
+      {SHOW_LEADERBOARD && (
+        <>
       <label className="block">Nickname for the leaderboard (optional)
         <input name="nickname" maxLength={30} className={input} placeholder="Leave empty to stay private" />
       </label>
@@ -71,6 +73,8 @@ export default function DonateForm() {
         <input type="checkbox" name="show_on_leaderboard" value="yes" className="mt-1" />
         I agree to show my nickname and book count publicly on the leaderboard.
       </label>
+        </>
+      )}
       {/* hidden trap field: real people never see it, spam bots fill it in */}
       <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" className="hidden" />
       <button disabled={status === "sending"}
