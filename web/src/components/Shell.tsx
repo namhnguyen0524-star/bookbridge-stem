@@ -13,6 +13,7 @@ export function Header() {
         </Link>
         <nav className="flex gap-5 text-sm font-medium">
           <Link href="/how-it-works/" className="hover:text-brand-green">How it works</Link>
+          <Link href="/blog/" className="hover:text-brand-green">Blog</Link>
           <Link href="/about/" className="hover:text-brand-green">About</Link>
           {SHOW_LEADERBOARD && (
             <Link href="/leaderboard/" className="hover:text-brand-green">Leaderboard</Link>
