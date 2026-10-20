@@ -12,6 +12,7 @@ export function Header() {
         </Link>
         <nav className="flex gap-5 text-sm font-medium">
           <Link href="/how-it-works/" className="hover:text-brand-green">How it works</Link>
+          <Link href="/about/" className="hover:text-brand-green">About</Link>
           <Link href="/leaderboard/" className="hover:text-brand-green">Leaderboard</Link>
           <Link href="/donate/" className="hover:text-brand-green">Donate</Link>
         </nav>
@@ -24,6 +25,9 @@ export function Footer() {
   return (
     <footer className="mt-16 border-t border-soft bg-white py-8 text-center text-sm opacity-80">
       <p>BookBridge STEM · a student-led project connecting US readers with Vietnamese learners.</p>
+      <p className="mt-1">
+        <Link href="/privacy/" className="underline">Privacy</Link> · <Link href="/about/" className="underline">About</Link>
+      </p>
       <p className="mt-1">Not a registered nonprofit yet. Donations are books only, never money.</p>
     </footer>
   );

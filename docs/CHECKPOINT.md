@@ -53,3 +53,7 @@ Last saved: 2026-10-17
 - /leaderboard reads web/src/data/leaderboard.json: [{"slug":"ada","name":"Ada L.","books":12}].
   Add rows by hand ONLY after books arrive + donor consented. Top 10 get /certificate/<slug>/ (printable). /certificate/sample/ is a labeled sample.
 - Later: replace the JSON with Supabase if hand-editing becomes a chore.
+
+## Built (About + Privacy)
+- /about (DRAFT story, owner should edit in own words) and /privacy (matches form fields; update if fields change). Linked in nav/footer.
+- USER TODO: talk to mom about shipping address, receiving partner in Vietnam, public nicknames on leaderboard.

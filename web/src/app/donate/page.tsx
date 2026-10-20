@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Header, Footer } from "@/components/Shell";
 import DonateForm from "@/components/DonateForm";
 
@@ -13,6 +14,9 @@ export default function Donate() {
           no missing pages, light writing is OK.
         </p>
         <DonateForm />
+        <p className="mt-6 text-sm opacity-70">
+          We use your details only to handle your books. Read our <Link href="/privacy/" className="underline">privacy page</Link>.
+        </p>
       </main>
       <Footer />
     </>
