@@ -14,7 +14,7 @@ const steps = [
   },
   {
     title: "3. Pack and send",
-    text: "We tell you how to pack the books and where to send them. Shipping details are still being worked out, so the exact steps may change.",
+    text: "We tell you how to pack the books and where to send them. You pay for and send the package yourself; we will not ask you for money.",
     why: "Good packing keeps books clean and dry on the long trip across the ocean.",
   },
   {
@@ -26,9 +26,10 @@ const steps = [
 
 const faq = [
   ["What kinds of books can I donate?", "Science, technology, engineering, art and math books in good shape, with no missing pages or heavy writing. Textbooks, reference books, and STEM stories are all welcome. Books in English are fine, since many Vietnamese students are learning English."],
-  ["Does it cost me money?", "We never ask for money. Donations are books only. Who pays for shipping is still being decided, and we will explain it clearly before you send anything."],
+  ["Does it cost me money?", "We never ask for money. Donations are books only. You ship the books yourself, and we email you the address and packing tips after we review your request."],
   ["Is BookBridge STEM a nonprofit?", "Not yet. It is a student-led project, so we cannot give tax receipts. We will say so clearly if that ever changes."],
   ["What happens to my information?", "We only collect what is needed to contact you about your books, such as your name, email and city. We will not sell it."],
+  ["What is the leaderboard and the certificate?", "The leaderboard ranks donors by how many books we have received from them. Only books that arrived and passed our check are counted, and only donors who agree are shown, using a nickname. The top 10 donors each get a printable certificate."],
   ["I'm a student or school in Vietnam. How can I get books?", "Requests from Vietnamese schools and libraries are coming soon. For now we are building the donor side first, so we know how many books to expect."],
 ];
 

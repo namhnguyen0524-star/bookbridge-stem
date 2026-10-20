@@ -46,3 +46,10 @@ Last saved: 2026-10-17
 - Form fields: name, email, book titles/subject/condition, number of books. NOT city/state (add later if map is built).
 - Minimum condition: good (no missing pages, light writing OK).
 - How-it-works page expanded with steps, why STEM, FAQ (live). FAQ/steps text must match these answers.
+
+## Built 2026-10-19 (leaderboard, certificate, form)
+- /donate form -> Formspree (emails owner). USER MUST: create free form at formspree.io, paste ID into
+  web/src/lib/config.ts (FORMSPREE_FORM_ID). Empty = form shows "not connected yet".
+- /leaderboard reads web/src/data/leaderboard.json: [{"slug":"ada","name":"Ada L.","books":12}].
+  Add rows by hand ONLY after books arrive + donor consented. Top 10 get /certificate/<slug>/ (printable). /certificate/sample/ is a labeled sample.
+- Later: replace the JSON with Supabase if hand-editing becomes a chore.

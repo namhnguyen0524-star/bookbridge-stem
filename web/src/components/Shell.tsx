@@ -12,6 +12,7 @@ export function Header() {
         </Link>
         <nav className="flex gap-5 text-sm font-medium">
           <Link href="/how-it-works/" className="hover:text-brand-green">How it works</Link>
+          <Link href="/leaderboard/" className="hover:text-brand-green">Leaderboard</Link>
           <Link href="/donate/" className="hover:text-brand-green">Donate</Link>
         </nav>
       </div>
